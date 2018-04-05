@@ -1,0 +1,52 @@
+{
+ "version": "application/octet-stream",
+ "allow_edit": true,
+ "plugins": [],
+ "panes": [
+  {
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": "3",
+   "widgets": [
+    {
+     "type": "FeedView",
+     "settings": {
+      "datasource": "datasources[\"piedht\"][\"data\"]",
+      "filter": "humidity,temperature ",
+      "type": "line",
+      "yzero": true,
+      "color": "",
+      "marker": true,
+      "multipleaxis": true,
+      "autogap": false,
+      "height_block": "240",
+      "height": "4"
+     }
+    }
+   ]
+  }
+ ],
+ "datasources": [
+  {
+   "name": "piedht",
+   "type": "netpie_feed",
+   "settings": {
+    "name": "piedht",
+    "feedid": "SmartDHT11",
+    "apikey": "PAdebFrZOKTtXon4asSOVNHgc23yxUp0",
+    "granularity_value": "15",
+    "granularity_unit": "seconds",
+    "since_value": "10",
+    "since_unit": "minutes",
+    "interval": "15"
+   }
+  }
+ ],
+ "columns": 3,
+ "theme": "default"
+}
