@@ -4,6 +4,8 @@ body {
     font-family: "Arial";
     padding: 0;
     margin: auto;
+    width:100%;
+    height: 100%;
 }
 .welcome-box{
     width: 300px;
